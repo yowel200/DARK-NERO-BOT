@@ -8096,7 +8096,7 @@ listMessage :{
  title: `Hi ${pushname}`,
  description: `*┏━━━❬KAVEESHA MD📌❭*
      
- *⬇️ ADVANCE YOUTUBE DOWNLODER* 
+  📥 ADVANCE YOUTUBE DOWNLODER* 
 
 *┃🎬Title :* ${anu.title} 
 
@@ -8244,22 +8244,24 @@ break
  ]
  let buttonMessage = {
  image: { url: anu.thumbnail },
- caption: `*┏━━━❬VIHANGA MD🧚❭*
+ caption: `*┏━━━❬KAVEESHA MD📌❭*
      
-   *⬇️ VIDEO DOWNLODER* 
+   📥 VIDEO DOWNLODER* 
  
-*┃💎Title :* ${anu.title} 
+*┃🎬Title :* ${anu.title} 
  
-*┃⏳Duration :* ${anu.timestamp} 
+*┃🎲Duration :* ${anu.timestamp} 
  
-*┃✍️Author :* ${anu.author.name} 
+*┃🍁Author :* ${anu.author.name} 
  
-*┃🔗Url :* ${anu.url} 
+*┃🍁Url :* ${anu.url} 
 
-*┃⌛Runtime :* ${runtime(process.uptime())}
+*┃🔖Runtime :* ${runtime(process.uptime())}
  
+*┃BOT NAME :* *✫ ✫ ✫𝙳𝙰𝚁𝙺 𝙽𝙴𝚁𝙾✫ ✫ ✫*
+
 ┗━━━━━━━━━❊`,
- footer: `${global.footer}`,
+ footer: `✫ ✫ ✫𝙳𝙰𝚁𝙺 𝙽𝙴𝚁𝙾✫ ✫ ✫`,
  buttons: buttons,
  headerType: 4,
  }
