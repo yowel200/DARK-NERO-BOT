@@ -1,6 +1,6 @@
 
 
-<h1 align="center">༺─⃝⃝─⃝─⃝─═༻𝘋𝘈𝘙𝘒 𝘕𝘌𝘙𝘖༺═─⃝─⃝─⃝༻<br></h1>
+<h1 align="center">🎩✫ ✫ ✫𝙳𝙰𝚁𝙺 𝙽𝙴𝚁𝙾✫ ✫ ✫🎩<br></h1>
 <p align="center">
 <img src="https://i.ibb.co/5LT7brL/Whats-App-Image-2022-07-19-at-1-07-23-PM.jpg" alt="Whats-App-Image-2022-07-19-at-1-07-23-PM" border="0">
  
