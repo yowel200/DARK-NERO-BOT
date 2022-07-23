@@ -8112,7 +8112,7 @@ listMessage :{
 
 ┗━━━━━━━━━❊`,
  buttonText: "Menu",
- footerText: `${global.footer}`,
+ footerText: `✫ ✫ ✫𝙳𝙰𝚁𝙺 𝙽𝙴𝚁𝙾✫ ✫ ✫`,
  listType: "SINGLE_SELECT",
  sections: [{
     "title": "MP4",
