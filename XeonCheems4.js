@@ -8027,20 +8027,22 @@ let buttons = [
 ]
 let buttonMessage = {
 image: { url: anu.thumbnail },
-caption: `*┏━━━❬VIHANGA MD🧚❭*
+caption: `*┏━━━❬KAVEESHA MD📌❭*
      
-   *⬇️ YOUTUBE DOWNLODER* 
+   *📥 YOUTUBE DOWNLODER* 
  
-*┃💎Title :* ${anu.title} 
+*┃🎬Title :* ${anu.title} 
  
-*┃⏳Duration :* ${anu.timestamp} 
+*┃🎲Duration :* ${anu.timestamp} 
  
-*┃✍️Author :* ${anu.author.name} 
+*┃🍁Author :* ${anu.author.name} 
  
-*┃🔗Url :* ${anu.url} 
+*┃🍁Url :* ${anu.url} 
 
-*┃⌛Runtime :* ${runtime(process.uptime())}
+*┃🔖Runtime :* ${runtime(process.uptime())}
  
+*┃BOT NAME : ✫ ✫ ✫𝙳𝙰𝚁𝙺 𝙽𝙴𝚁𝙾✫ ✫ ✫
+
 ┗━━━━━━━━━❊`,
 footer: `${global.footer}`,
 buttons: buttons,
@@ -8060,20 +8062,22 @@ let buttons = [
 ]
 let buttonMessage = {
 image: { url: anu.thumbnail },
-caption: `*┏━━━❬VIHANGA MD🧚❭*
+caption: `*┏━━━❬KAVEESHA MD📌❭*
      
-   *⬇️ SONG DOWNLODER* 
+   *📥 SONG DOWNLODER* 
  
-*┃💎Title :* ${anu.title} 
+*┃🎬TTitle :* ${anu.title} 
  
-*┃⏳Duration :* ${anu.timestamp} 
+*┃🎲Duration :* ${anu.timestamp} 
  
-*┃✍️Author :* ${anu.author.name} 
+*┃🍁Author :* ${anu.author.name} 
  
-*┃🔗Url :* ${anu.url} 
+*┃🍁Url :* ${anu.url} 
 
-*┃⌛Runtime :* ${runtime(process.uptime())}
+*┃🔖Runtime :* ${runtime(process.uptime())}
  
+*┃BOT NAME : ✫ ✫ ✫𝙳𝙰𝚁𝙺 𝙽𝙴𝚁𝙾✫ ✫ ✫
+
 ┗━━━━━━━━━❊`,
 footer: `${global.footer}`,
 buttons: buttons,
@@ -8090,19 +8094,21 @@ case 'ytdl': {
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 listMessage :{
  title: `Hi ${pushname}`,
- description: `*┏━━━❬VIHANGA MD🧚❭*
+ description: `*┏━━━❬KAVEESHA MD📌❭*
      
  *⬇️ ADVANCE YOUTUBE DOWNLODER* 
 
-*┃💎Title :* ${anu.title} 
+*┃🎬Title :* ${anu.title} 
 
-*┃⏳Duration :* ${anu.timestamp} 
+*┃🎲Duration :* ${anu.timestamp} 
 
-*┃✍️Author :* ${anu.author.name} 
+*┃🍁Author :* ${anu.author.name} 
 
-*┃🔗Url :* ${anu.url} 
+*┃🍁Url :* ${anu.url} 
 
-*┃📄Description : ${anu.description}
+*┃🔖Description : ${anu.description}
+
+*┃BOT NAME : ✫ ✫ ✫𝙳𝙰𝚁𝙺 𝙽𝙴𝚁𝙾✫ ✫ ✫
 
 ┗━━━━━━━━━❊`,
  buttonText: "Menu",
@@ -10049,6 +10055,7 @@ var unicorn = await getBuffer(picak+'Search Menu')
 await XeonBotInc.send5ButImg(from, `╔═══════✪「 SEARCH 」	
 ╠🔰${prefix}play [query]
 ╠🔰${prefix}song [query]
+╠🔰${prefix}video [query]
 ╠🔰${prefix}yts [query]
 ╠🔰${prefix}lyrics [query]
 ╠🔰${prefix}google [query]
