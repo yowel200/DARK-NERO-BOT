@@ -93,8 +93,8 @@ Scan qr code from the above button, u can pay through GooglePay, Paytm, PhonePe 
  
  
  <p align="center">
-<img src="https://i.ibb.co/G9wWrwj/cheemspic.jpg" alt="nz" width="600"/>
-</p>
+<img src="https://i.ibb.co/6tCrPD6/image-downloader-1654443961039.gif" alt="nz" width="600"/>
+</p
  
  
  
