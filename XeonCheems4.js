@@ -6462,103 +6462,58 @@ sourceUrl: args[0]
 XeonBotInc.sendMessage(from, buttonMessage, {quoted:m})
 }
 break
-case 'fbdl': case 'fb': case 'facebook': case 'fbmp4': {     	    
-   if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-             if (!text) return reply(`Where is the link bro?\nExample: ${prefix}facebook https://www.facebook.com/groups/599913174599515/permalink/705467384044093/`)
-                if (!isUrl(args[0]) && !args[0].includes('facebook.com')) return reply(`The link you provided is not valid`)
-            let bocil = require('@bochilteam/scraper')  
-                bocil.facebookdlv2(`${text}`).then(async (data) => {                   
-                    let txt = `*FB DOWNLOADER*\n\n`
-                    txt += `*${themeemoji}TITLE :* ${data.title}\n`
-                    txt += `*${themeemoji}QUALITY :* ${data.result[0].quality}\n`
-                    txt += `*${themeemoji}DESCRIPTION :* ${data.description}\n`
-                    txt += `*${themeemoji}ID :* ${watermark}\n`
-                    txt += `*${themeemoji}URL :* ${text}\n\n`
-                buf = await getBuffer(data.thumbnail)    
-                XeonBotInc.sendMessage(m.chat, { image: { url: data.thumbnail }, jpegThumbnail:buf, caption: `${txt}` }, { quoted: m })         
-                for (let i of data.result) {     
-                XeonBotInc.sendMessage(m.chat, { video: { url: i.url }, jpegThumbnail:buf, caption: `*${themeemoji} Quality :* ${i.quality}`}, { quoted: m })
-                }          
-                }).catch((err) => {
-                    reply(mess.error)
-                })
-            }
-            break
-            case 'fbmp3': case 'facebookmp3': case 'facebookaudio': {
-   if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-                  if (!text) return reply(`Where is the link?\nExample: ${prefix + command} https://www.facebook.com/groups/599913174599515/permalink/705467384044093/`)
-                  if (!isUrl(args[0]) && !args[0].includes('facebook.com')) return reply(`The link you provided is not valid`)
-  let noh = require('@bochilteam/scraper')                
-  noh.savefrom(`${text}`).then(async (anu) => {  
-  XeonBotInc.sendMessage(m.chat, { audio: { url: anu.url[0].url }, mimetype: 'audio/mp4' }, { quoted: m })      
-                }).catch((err) => {
-                    reply(mess.error)
-                })
-            }
-            break
-case 'facebookxx': case 'fbdlxxx': case 'fbmp4xxx': case 'fbxxx': {
-   if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-if (!args[0]) return reply(`Example :\n${prefix + command} https://fb.watch/cAX2dep-BZ/`)
-try {
-let resd = await aiovideodl(args[0])
-teks = `*| FACEBOOK DOWNLOADER |*
-
-Type : video/${resd.medias[0].extension}
-Quality : ${resd.medias[0].quality}
-Size : ${resd.medias[0].formattedSize}
-
-_For HD quality you can click the button below_`
-let buttons = [
-{buttonId: `fbddl ${resd.medias[1].url}`, buttonText: {displayText: 'QualityHD'}, type: 1}
+case 'fb' :
+    case 'facebook' :
+        XeonBotInc.sendMessage(from, { react: { text: `🌟`, key: m.key }})
+    try {
+   if (!q) return await XeonBotInc.sendMessage(from , { text: 'need fb link' }, { quoted: m } )      
+   const isfb = q.includes('facebook.com')? q.includes('facebook.com') : q.includes('fb.watch')? q.includes('fb.watch') : ''
+       if (!isfb) return await XeonBotInc.sendMessage(from , { text: 'need fb link' }, { quoted: m } )  
+  const msg = 'Vihanga MD FB Downloder\n\n*📥Quality එක තෝරන්න්න📤*'
+const buttons = [
+{buttonId: 'fbsd ' + q, buttonText: {displayText: '480p'}, type: 1},
+{buttonId: 'fbhd ' + q, buttonText: {displayText: '720p'}, type: 1},
 ]
-let buttonMessage = {
-video: {url:resd.medias[0].url},
-caption: teks,
-footer: '𝙳𝙰𝚁𝙺 𝙽𝙴𝚁𝙾 𝙱𝙾𝚃',
-buttons: buttons,
-headerType: 4,
-contextInfo:{externalAdReply:{
-title:`${global.botname}`,
-body:"Facebook Downloader",
-thumbnail: log0,
-mediaType:1,
-mediaUrl: args[0],
-sourceUrl: args[0]
-}}
-}
-XeonBotInc.sendMessage(from, buttonMessage, {quoted:m})
-} catch {
-reply("Link invalid!")
-}
-}
-break
-case 'fbddlxx': {
-   if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-let buttons = [
-{buttonId: `menu`, buttonText: {displayText: 'Menu 🐥'}, type: 1}
-]
-let buttonMessage = {
-video: {url:args[0]},
-caption: "Done!",
-footer: '𝙳𝙰𝚁𝙺 𝙽𝙴𝚁𝙾 𝙱𝙾𝚃',
-buttons: buttons,
-headerType: 4,
-contextInfo:{externalAdReply:{
-title:`${global.botname}`,
-body: " Facebook Downloader",
-thumbnail: log0,
-mediaType:1,
-mediaUrl: args[0],
-sourceUrl: args[0]
-}}
-}
-XeonBotInc.sendMessage(from, buttonMessage, {quoted:m})
-}
-break
+await XeonBotInc.sendMessage(from, {  text: msg , footer: `${global.footer}` , buttons: buttons , headerType: 4} , { quoted: m } )  
+
+    } catch(e) {
+  await XeonBotInc.sendMessage(from , { text: 'error\n\n' + e }, { quoted: m } )      
+    }      
+    break
+
+    case 'fbhd' : 
+        try {
+  if (!q) return await XeonBotInc.sendMessage(from , { text: 'need fb link' }, { quoted: m } )
+  const data = await axios.get('https://api-bobiz.herokuapp.com/api/fb?url=' + q)
+  const file = data.data[0]
+
+const fileup = await XeonBotInc.sendMessage(from , { text: 'Downloading...' }, { quoted: m } )
+await XeonBotInc.sendMessage(from, { delete: fileup.key })
+const filedown = await XeonBotInc.sendMessage(from , { text: 'Uploading...' }, { quoted: m } )
+const doc = await XeonBotInc.sendMessage(from , { video : { url : file.url  } ,  caption : `${global.cap}` } , { quoted: m })
+await XeonBotInc.sendMessage(from, { delete: filedown.key })	
+  } 
+  catch(e) {
+      await XeonBotInc.sendMessage(from , { text: 'error\n\n' + e }, { quoted: m } )
+  }
+        break
+
+          case 'fbsd' : 
+        try {
+  if (!q) return await XeonBotInc.sendMessage(from , { text: 'need fb link' }, { quoted: m } )
+  const data = await axios.get('https://api-bobiz.herokuapp.com/api/fb?url=' + q)
+  const file = data.data[1]
+
+const fileup = await XeonBotInc.sendMessage(from , { text: 'Downloading...' }, { quoted: m } )
+await XeonBotInc.sendMessage(from, { delete: fileup.key })
+const filedown = await XeonBotInc.sendMessage(from , { text: 'Uploading...' }, { quoted: m } )
+const doc = await XeonBotInc.sendMessage(from , { video : { url : file.url  } ,  caption : `${global.cap}` } , { quoted: m })
+await XeonBotInc.sendMessage(from, { delete: filedown.key })	
+  } 
+  catch(e) {
+      await XeonBotInc.sendMessage(from , { text: 'error\n\n' + e }, { quoted: m } )
+  }
+        break
             case 'pinterest2': {
             	   if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
