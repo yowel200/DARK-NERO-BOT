@@ -1,6 +1,6 @@
 
 
-<h1 align="center">🎩✫ ✫ ✫𝙳𝙰𝚁𝙺 𝙽𝙴𝚁𝙾✫ ✫ ✫🎩<br></h1>
+<h1 align="center">DARK NERO<br></h1>
 <p align="center">
 <img src="https://i.ibb.co/5LT7brL/Whats-App-Image-2022-07-19-at-1-07-23-PM.jpg" alt="Whats-App-Image-2022-07-19-at-1-07-23-PM" border="0">
  
@@ -31,20 +31,6 @@ Cheems Bot Multi Device is a automated whatsapp bot created by <a href="https://
 </p>
 <p align='center'>
     </p>
-
-
-
-
-
-Created By (𝙺𝙰𝚅𝙴𝙴𝚂𝙷𝙰 𝚂𝙸𝚃𝙷𝚄𝙼)
-
-voice created (𝙿𝚁𝙰𝙼𝚄 & amara)
-
-thenx fro (𝙺𝚄𝙼𝚄𝚃𝙷𝚄 & 𝚅𝙸𝙷𝙰𝙽𝙶𝙰)
-
-
-
-
 
 -------
 
@@ -88,17 +74,6 @@ Scan qr code from the above button, u can pay through GooglePay, Paytm, PhonePe 
 - CHANGE BOT NAME [Here](https://github.com/Kaveeshasithum/DARK-NERO-BOT.git/blob/master/settings.js#L67)
 
 
- 
- 
- 
- 
- <p align="center">
-<img src="https://i.ibb.co/6tCrPD6/image-downloader-1654443961039.gif" alt="nz" width="600"/>
-</p
- 
- 
- 
- 
 <img src="https://camo.githubusercontent.com/71b837571c48af3aa60a73dbc9d5936aa359d78efbfa8a6743cbbbc16b80ef4d/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3830353930323039333930363630383138362f3830353931333937323533353539303932322f74656e6f722e676966" alt="nz" width="600"/>
 
 ## ` BUILDPACKS`
@@ -108,7 +83,7 @@ https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
 https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 ```
 
-[![Deploy](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DGXeon/CheemsBot-MD4/)
   
 
 <img src="https://camo.githubusercontent.com/71b837571c48af3aa60a73dbc9d5936aa359d78efbfa8a6743cbbbc16b80ef4d/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3830353930323039333930363630383138362f3830353931333937323533353539303932322f74656e6f722e676966" alt="nz" width="600"/>
