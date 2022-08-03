@@ -3,7 +3,7 @@
 //or copy the codes/script,
 //pls give credit
 //no credit? i will take action immediately
-//© 2022 Xeon Bot Inc. nero Bot MD
+//© 2022 kaveesha Bot Inc. nero Bot MD
 //Thank you to Lord kaveesha, Family and Myself
 //════════════════════════════//
 //recode kar ke youtube pe upload kar rhe hai ya
