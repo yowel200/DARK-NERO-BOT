@@ -11,14 +11,14 @@
 //hai to, description me xeon ka yt channel
 // ka link paste kr dena as a cradit or github 
 //repo me bhi tag kardena baki jo
-//bhi karna hai apki marzi, thank you!🦄
+//bhi karna hai apki marzi, thank you!
 //════════════════════════════//
 //If you recode and uploading on your channel
 //or copy pasting the codes in ur script, 
 //i give permission to do as long as you
 //put Xeons youtube channel link in the video
 //description and tag me on githuh repo, 
-//thank you🦄
+//thank you
 //════════════════════════════//
 
 require('./settings')
@@ -779,7 +779,7 @@ XeonBotInc.sendMessage(from, {text:`\`\`\`「 Link Detected 」\`\`\`\n\n@${kice
 				  }
 
 //emoji 
-const emote = (satu, dua) => {
+const emote = (satu, dua) => { 
 try{	    
 const { EmojiAPI } = require("emoji-api");
 const emoji = new EmojiAPI();
@@ -1803,7 +1803,8 @@ delete caklontong_desk[m.sender.split('@')[0]]
 }
 break
 		
-	case 'react': { 
+	case 'react': {  
+    XeonBotInc.sendMessage(from, { react: { text: `🐼`, key: m.key }})
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(m.chat, reactionMessage)} 
