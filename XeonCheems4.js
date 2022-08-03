@@ -2288,7 +2288,8 @@ if (isBanChat) return reply(mess.banChat)
           reply(`Exif Has Been Successfully Changed to\n\n${themeemoji} Packname : ${global.packname}\n${themeemoji} Author : ${global.author}`)
             }
             break
-	case 'kick': {
+	case 'kick': { 
+    XeonBotInc.sendMessage(from, { react: { text: `😱`, key: m.key }})    
 		if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 		if (!m.isGroup) return replay(`${mess.group}`)
@@ -2298,7 +2299,8 @@ if (isBanChat) return reply(mess.banChat)
 		await XeonBotInc.groupParticipantsUpdate(m.chat, [users], 'remove').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
-	case 'add': {
+	case 'add': { 
+        XeonBotInc.sendMessage(from, { react: { text: `❤️`, key: m.key }})    
 		if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 		if (!m.isGroup) return replay(`${mess.group}`)
@@ -2336,7 +2338,8 @@ if (isBanChat) return reply(mess.banChat)
 		await XeonBotInc.updateBlockStatus(users, 'block').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
-        case 'unblock': {
+        case 'unblock': { 
+            XeonBotInc.sendMessage(from, { react: { text: `😀`, key: m.key }})    
         	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 		if (!isCreator) return replay(`${mess.owner}`)
@@ -2389,7 +2392,8 @@ if (isBanChat) return reply(mess.banChat)
                 reply(mess.success)
                 }
                 break
-            case 'tagall': {
+            case 'tagall': { 
+            XeonBotInc.sendMessage(from, { react: { text: `🔥`, key: m.key }})    
             	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
                 if (!m.isGroup) return replay(`${mess.group}`)
@@ -6122,7 +6126,8 @@ break
 	    })
 	    }
 	    break
-	case 'yts': case 'ytsearch': {
+	case 'yts': case 'ytsearch': { 
+    XeonBotInc.sendMessage(from, { react: { text: `🙈`, key: m.key }})  
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!args.join(" ")) return replay(`Example : ${prefix + command} stay jb`)
@@ -6152,7 +6157,8 @@ reply(teks)
 })
 }
 break
-case 'gimage': case 'googleimage': {
+case 'gimage': case 'googleimage': { 
+XeonBotInc.sendMessage(from, { react: { text: `🌹`, key: m.key }})  
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!args[0]) return reply("What picture are you looking for??")
