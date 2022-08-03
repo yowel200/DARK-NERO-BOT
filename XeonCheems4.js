@@ -4723,60 +4723,115 @@ replay(`🌐Translate : ${Detek}\n📃Results : ${Infoo}`)
 }
 break
 case 'sound1':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound2':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})    
 case 'sound3':
+ XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound4':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound5':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound6':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})    
 case 'sound7':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
 case 'sound8':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
 case 'sound9':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
 case 'sound10':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound11':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})    
 case 'sound12':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound13':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound14':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
 case 'sound15':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})    
 case 'sound16':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound17':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound18':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
 case 'sound19':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound20':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound21':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
 case 'sound22':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})    
 case 'sound23':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound24':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
 case 'sound25':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
 case 'sound26':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound27':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound28':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})    
 case 'sound29':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})    
 case 'sound30':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})    
 case 'sound31':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})    
 case 'sound32':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound33':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound34':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound35':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound36':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound37':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})    
 case 'sound38':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})    
 case 'sound39':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound40':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound41':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound42':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound43':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})    
 case 'sound44':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound45':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound46':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound47':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound48':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound49':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})    
 case 'sound50':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound51':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})    
 case 'sound52':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound53':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound54':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})  
 case 'sound55':
+XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
 case 'sound56':
 case 'sound57':
 case 'sound58':
@@ -8191,7 +8246,7 @@ break
                      buf = await getBuffer(media.thumb) 
                      const auddown = await XeonBotInc.sendMessage(from , { text: '📥 Downloading Your Song...' }, { quoted: m } )
                      await XeonBotInc.sendMessage(from, { delete: auddown.key })
-                     const audup = await XeonBotInc.sendMessage(from , { text: 'Uploading Your Song...' }, { quoted: m } )
+                     const audup = await XeonBotInc.sendMessage(from , { text: '📤 Uploading Your Song...' }, { quoted: m } )
                      const aud = await XeonBotInc.sendMessage(m.chat, {audio:{url:media.dl_link}, mimetype:"audio/mpeg", fileName: `${media.title}.mp3`}, { quoted: m }) .catch((err) => reply(mess.error))
                      await XeonBotInc.sendMessage(from, { delete: audup.key })               
                      }
