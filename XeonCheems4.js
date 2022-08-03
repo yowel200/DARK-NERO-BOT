@@ -7978,7 +7978,8 @@ case 'ttaud':{
     XeonBotInc.sendMessage(from, { audio: { url: xeonytiktokaudio }, mimetype: 'audio/mp4' }, { quoted: m })
    }
         break
-	    case 'play': case 'yt': {
+	    case 'play': case 'yt': { 
+        XeonBotInc.sendMessage(from, { react: { text: `🔎`, key: m.key }})    
             if (!text) return reply(`Example : ${prefix + command} lelena`)
 let yts = require("yt-search")
 let search = await yts(text)
@@ -8013,7 +8014,8 @@ headerType: 4,
 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
 }
 break
-case 'song': {
+case 'song': { 
+XeonBotInc.sendMessage(from, { react: { text: `🎧`, key: m.key }})    
     if (!text) return reply(`Example : ${prefix + command} lelena`)
 let yts = require("yt-search")
 let search = await yts(text)
@@ -8155,11 +8157,11 @@ break
                 if (!isUrl(args[0]) && !args[0].includes('youtube.com')) return reply(`The link you provided is invalid`)
                 anu = await fetchJson(`https://api.akuari.my.id/downloader/youtube?link=${text}`)        
                 if (anu.filesize_video >= 999999) return reply('*File Over Limit* '+util.format(anu))
-                const docdown = await XeonBotInc.sendMessage(from , { text: 'Downloading Your Song...' }, { quoted: m } )
-                tummb = await getBuffer(anu.thumb)
+                const docdown = await XeonBotInc.sendMessage(from , { text: '📥 Downloading Your Song...' }, { quoted: m } )                
+                     tummb = await getBuffer(anu.thumb)
                 audio = await getBuffer(anu.audio)  
                 await XeonBotInc.sendMessage(from, { delete: docdown.key })
-                const docup = await XeonBotInc.sendMessage(from , { text: 'Uploading Your Song...' }, { quoted: m } )      
+                const docup = await XeonBotInc.sendMessage(from , { text: '📤 Uploading Your Song...' }, { quoted: m } )      
                 const doc = await XeonBotInc.sendMessage(m.chat, {document: audio, mimetype: 'audio/mpeg', fileName: `${anu.title}`}, { quoted : m }).catch((err) => reply(mess.error))
                 await XeonBotInc.sendMessage(from, { delete: docup.key })
             }
@@ -8172,9 +8174,9 @@ break
                                 let media = await ytv(text, quality)
                                 if (media.filesize >= 999999) return reply('*File Over Limit* '+util.format(media))
                                 var buf = await getBuffer(media.thumb)
-                                const viddown = await XeonBotInc.sendMessage(from , { text: 'Downloading Your Video...' }, { quoted: m } )
+                                const viddown = await XeonBotInc.sendMessage(from , { text: '📥 Downloading Your Video...' }, { quoted: m } )
                                 await XeonBotInc.sendMessage(from, { delete: viddown.key })
-                                const vidup = await XeonBotInc.sendMessage(from , { text: 'Uploading Your Video...' }, { quoted: m } )
+                                const vidup = await XeonBotInc.sendMessage(from , { text: '📤 Uploading Your Video...' }, { quoted: m } )
                                 const vid = await XeonBotInc.sendMessage(m.chat, { video: { url: media.dl_link }, jpegThumbnail:buf, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `${global.cap}` }, { quoted: m }).catch((err) => reply(mess.error))
                                 await XeonBotInc.sendMessage(from, { delete: vidup.key }) 
                             }
@@ -8187,14 +8189,15 @@ break
                      let media = await yta(text, quality)
                      if (media.filesize >= 999999) return reply('*File Over Limit* '+util.format(media))                
                      buf = await getBuffer(media.thumb) 
-                     const auddown = await XeonBotInc.sendMessage(from , { text: 'Downloading Your Song...' }, { quoted: m } )
+                     const auddown = await XeonBotInc.sendMessage(from , { text: '📥 Downloading Your Song...' }, { quoted: m } )
                      await XeonBotInc.sendMessage(from, { delete: auddown.key })
                      const audup = await XeonBotInc.sendMessage(from , { text: 'Uploading Your Song...' }, { quoted: m } )
                      const aud = await XeonBotInc.sendMessage(m.chat, {audio:{url:media.dl_link}, mimetype:"audio/mpeg", fileName: `${media.title}.mp3`}, { quoted: m }) .catch((err) => reply(mess.error))
                      await XeonBotInc.sendMessage(from, { delete: audup.key })               
                      }
                  break
-	case 'video': {
+	case 'video': { 
+    XeonBotInc.sendMessage(from, { react: { text: `🎥`, key: m.key }})    
         if (!text) return reply(`Example : ${prefix + command} lelena`)
  let yts = require("yt-search")
  let search = await yts(text)
@@ -8850,7 +8853,8 @@ sourceUrl: "https://telegra.ph/file/8737b098fd5702daeb7e0.jpg"
 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
 }
 break
-case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
+case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': { 
+XeonBotInc.sendMessage(from, { react: { text: `💖`, key: m.key }})           
 		if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
