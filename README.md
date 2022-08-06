@@ -58,7 +58,7 @@ Cheems Bot Multi Device is a automated whatsapp bot created by <a href="https://
 
 
 
-     𝙱𝙾𝚃 cricating = 𝙺𝙰𝚅𝙴𝙴𝚂𝙷𝙰
+    [`𝙱𝙾𝚃 cricating = 𝙺𝙰𝚅𝙴𝙴𝚂𝙷𝙰)
 
 
 
