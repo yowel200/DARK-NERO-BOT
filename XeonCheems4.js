@@ -6134,7 +6134,12 @@ listMessage :{
         "title": "FoudWhatsapp",
         "description": "Whatsapp Mod Down By  KAVEESHA 🇱🇰",
         "rowId": `modwh https://www.mediafire.com/file/ajcq9gyzw3vm56e/%255Bnormal_theme%255D_%25E2%259A%25B6APS_WA_V.XV.apk/file`
-    }
+    },
+    {
+     "title": "Mr Whatsapp",
+     "description": "Whatsapp Mod Down By  KAVEESHA 🇱🇰",
+     "rowId": `modwh https://www.mediafire.com/file/ih9vt7aoeyw8zp9/WhatsApp-mod.zip/file`
+ },
 ]
 }
 
