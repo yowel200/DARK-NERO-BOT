@@ -78,16 +78,7 @@ async function startXeonBotInc() {
 
     store.bind(XeonBotInc.ev)
     
-    // anticall auto block
-    XeonBotInc.ws.on('CB:call', async (json) => {
-    const callerId = json.content[0].attrs['call-creator']
-    if (json.content[0].tag == 'offer') {
-    let xeonfek = await XeonBotInc.sendContact(callerId, global.owner)
-    XeonBotInc.sendMessage(callerId, { text: `Automatic Block System!\nDon't Call Bot!\nPlease Ask Or Contact The Owner To Unblock You!`}, { quoted : xeonfek })
-    await sleep(8000)
-    await XeonBotInc.updateBlockStatus(callerId, "block")
-    }
-    })
+
 
     XeonBotInc.ev.on('messages.upsert', async chatUpdate => {
         //console.log(JSON.stringify(chatUpdate, undefined, 2))
