@@ -3,7 +3,7 @@
 //or copy the codes/script,
 //pls give credit
 //no credit? i will take action immediately
-//© 2022 kaveesha Bot Inc. nero Bot MD
+//© 2022 Xeon Bot Inc. nero Bot MD
 //Thank you to Lord kaveesha, Family and Myself
 //════════════════════════════//
 //recode kar ke youtube pe upload kar rhe hai ya
@@ -294,7 +294,7 @@ autoreadsw = true
             if (typeof setting !== 'object') global.db.data.settings[botNumber] = {}
 	    if (setting) {
 		if (!isNumber(setting.status)) setting.status = 0
-		if (!('autobio' in setting)) setting.autobio = false
+		if (!('autobio' in setting)) setting.autobio = true
 if (!('templateImage' in setting)) setting.templateImage = false
 if (!('templateVideo' in setting)) setting.templateVideo = false
 		if (!('templateGif' in setting)) setting.templateGif = false
@@ -302,7 +302,7 @@ if (!('templateVideo' in setting)) setting.templateVideo = false
 		if (!('templateDocument' in setting)) setting.templateDocument = true
 	    } else global.db.data.settings[botNumber] = {
 		status: 0,
-		autobio: false,
+		autobio: true,
 		templateImage: false,
 		templateVideo: false,
 		templateGif: false,
