@@ -6070,6 +6070,100 @@ await XeonBotInc.sendMessage(from, {text:"reply #s to this image to make sticker
 }
 break
 
+
+//Mod wathsapp//
+
+
+case 'mod': case 'wamod': case 'modwa': case 'whatsapp':case 'wa':{
+    XeonBotInc.sendMessage(from, { react: { text: `👽`, key: m.key }})
+let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+listMessage :{
+ title: ` ඔයාට ඕන mod එක තෝරන්න ✍️
+
+ Mod ගණන :-
+ 
+ `,
+ description: `Mod Whatsapp Downloder By Kaveesha `,
+ buttonText: "Select Mod ⏳",
+ footerText: `✫ ✫ ✫𝙳𝙰𝚁𝙺 𝙽𝙴𝚁𝙾✫ ✫ ✫`,
+ listType: "SINGLE_SELECT",
+ sections: [{
+    "title": "logo1",
+    "rows": [
+        {
+            "title": "Orginal Whatsapp",
+            "description": "Whatsapp Mod Down By  KAVEESHA 🇱🇰",
+            "rowId": `modwh hthatsapp Mod Down By KAVEESHA 🇱🇰tps://www.mediafire.com/file/4btgeoy3mw5ibwj/Orginal+Wa+By+Vihanga+MD.apk/file`
+        },
+       {
+           "title": "Whatsapp Business",
+           "description": "Whatsapp Mod Down By  KAVEESHA 🇱🇰",
+           "rowId": `modwh https://www.mediafire.com/file/slm9xkv1ubf4u2u/Wa+Business+By+Vihanga+MD.apk/file`
+       },
+       {
+           "title": "FmWhatsapp",
+           "description": "WWhatsapp Mod Down By  KAVEESHA 🇱🇰",
+           "rowId": `modwh https://www.mediafire.com/file/g7o9igrn3cozwg3/Fm+Wa+By+Vihanga+MD.apk/file`
+       },
+       {
+        "title": "Gb Whatsapp",
+        "description": "Whatsapp Mod Down By  KAVEESHA 🇱🇰",
+        "rowId": `modwh https://www.mediafire.com/file/i4az6d9d11me9rl/Gb+Wa+By+Vihanga+MD.apk/file`
+    },
+    {
+        "title": "YoWhatsapp",
+        "description": "Whatsapp Mod Down By  KAVEESHA 🇱🇰",
+        "rowId": `modwh https://www.mediafire.com/file/tmnatbpznbd8f4t/Yo+Wa+By+Vihanga+MD.apk/file`
+    },
+    {
+        "title": "Kaviya Full AntiVirus Mod",
+        "description": "Whatsapp Mod Down By  KAVEESHA 🇱🇰",
+        "rowId": `modwh https://www.mediafire.com/file/lew8nrglyd3q9wi/%F0%93%84%82%F0%9D%90%92%F0%9D%90%80%F0%9D%90%88%F0%9D%90%93%F0%9D%90%84%F0%9D%90%8C+%F0%9D%90%8A%F0%9D%90%80%F0%9D%90%95%F0%9D%90%88%F0%9D%90%98%F0%9D%90%80++%F0%9D%90%95%F0%9D%9F%AD5_2.22.2.73.apk/file`
+    },
+    {
+        "title": "Aps Whatsapp Neon Blue Full Antivirus",
+        "description": "Whatsapp Mod Down By  KAVEESHA 🇱🇰",
+        "rowId": `modwh https://www.mediafire.com/file/yftiamsvl90nnec/%255Bneon_gray%255D_%25E2%259A%25B6APS_WA_V.XV.apk/file`
+    },
+    {
+        "title": "Aps Normal Theme Full Antivirus",
+        "description": "Whatsapp Mod Down By  KAVEESHA 🇱🇰",
+        "rowId": `modwh https://www.mediafire.com/file/g7o9igrn3cozwg3/Fm+Wa+By+Vihanga+MD.apk/file`
+    },
+    {
+        "title": "FoudWhatsapp",
+        "description": "Whatsapp Mod Down By  KAVEESHA 🇱🇰",
+        "rowId": `modwh https://www.mediafire.com/file/ajcq9gyzw3vm56e/%255Bnormal_theme%255D_%25E2%259A%25B6APS_WA_V.XV.apk/file`
+    }
+]
+}
+
+     ],
+listType: 1
+}
+}), {})
+XeonBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
+}
+break
+case 'modwh': {
+    XeonBotInc.sendMessage(from, { react: { text: `✍️`, key: m.key }})
+if (!text) return reply(mess.linkm)
+if (!isUrl(args[0]) && !args[0].includes('mediafire.com')) return reply(`Cant Download This Mod`)
+const baby1 = await mediafireDl(text)
+if (baby1[0].size.split('MB')[0] >= 200) return reply('File Over Limit '+util.format(baby1))
+const result4 =  `  Mod Whatsapp Downloder By Kaveesha 
+ 
+
+Mod Name : ${baby1[0].nama}
+Size : ${baby1[0].size}`
+reply(`${result4}`)
+XeonBotInc.sendMessage(m.chat, { document : { url : baby1[0].link}, fileName : baby1[0].nama, mimetype: baby1[0].mime }, { quoted : m }).catch ((err) => reply(mess.error))
+}
+break
+
+
+
+
 case 'igemoji': 
 case 'instagramemoji': 
 if (isBan) return reply(mess.ban)	 			
@@ -9412,6 +9506,9 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 OWNER 」
 ╠🔰${prefix}gitclone [repo link]
 ╠🔰${prefix}soundcloud [url]
 ╠🔰${prefix}zippyshare [url]
+╠🔰${prefix}whatsapp
+╠🔰${prefix}wamod
+╠🔰${prefix}wa
 ╠═══════✪「 SEARCH 」	
 ╠🔰${prefix}play [query]
 ╠🔰${prefix}song [query]
@@ -10210,6 +10307,10 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 SEARCH 」
 ╠🔰${prefix}wattpad [query]
 ╠🔰 ${prefix}mcserver [ip|port]
 ╠🔰${prefix}drakor [query]
+╠🔰${prefix}whatsapp
+╠🔰${prefix}wa
+╠🔰${prefix}wamod
+╠🔰${prefix}mod
 ╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🔥","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👑","id": 'owner'}}] )
 break
 case 'convertmenu':
