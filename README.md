@@ -44,7 +44,7 @@ Cheems Bot Multi Device is a automated whatsapp bot created by <a href="https://
 
 ## 
 
-##```DARK NERO NEW UPDATE``` 
+//```DARK NERO NEW UPDATE```// 
 
 2022 08 03 
 
@@ -58,7 +58,7 @@ THENX FROM = vihanga & kumuthu    pramu & amra
 
 
 
-
+     𝙱𝙾𝚃 cricating = 𝙺𝙰𝚅𝙴𝙴𝚂𝙷𝙰
 
 
 
