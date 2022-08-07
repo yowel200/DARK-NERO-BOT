@@ -6,7 +6,7 @@
 //© 2022 kaveesha Bot Inc. nero Bot MD
 //Thank you to Lord kaveesha, Family and Myself
 //════════════════════════════//
-      // KAVEESHA
+      // KAVEESHA 
 //════════════════════════════//
 //If you recode and uploading on your channel
 //or copy pasting the codes in ur script, 
