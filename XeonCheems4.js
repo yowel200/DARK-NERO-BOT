@@ -6738,17 +6738,17 @@ XeonBotInc.sendMessage(from, buttonMessage, {quoted:m})
 break
 case 'fb' :
     case 'facebook' :
-        XeonBotInc.sendMessage(from, { react: { text: `🌟`, key: m.key }})
+        XeonBotInc.sendMessage(from, { react: { text: `💛`, key: m.key }})
     try {
    if (!q) return await XeonBotInc.sendMessage(from , { text: 'need fb link' }, { quoted: m } )      
    const isfb = q.includes('facebook.com')? q.includes('facebook.com') : q.includes('fb.watch')? q.includes('fb.watch') : ''
        if (!isfb) return await XeonBotInc.sendMessage(from , { text: 'need fb link' }, { quoted: m } )  
-  const msg = 'Vihanga MD FB Downloder\n\n*📥Quality එක තෝරන්න්න📤*'
+  const msg = '*KAveesha* MD FB Downloder\n\n*📥Quality එක තෝරන්න්න📤*'
 const buttons = [
 {buttonId: 'fbsd ' + q, buttonText: {displayText: '480p'}, type: 1},
 {buttonId: 'fbhd ' + q, buttonText: {displayText: '720p'}, type: 1},
 ]
-await XeonBotInc.sendMessage(from, {  text: msg , footer: `${global.footer}` , buttons: buttons , headerType: 4} , { quoted: m } )  
+await XeonBotInc.sendMessage(from, {  text: msg , footer: `✫ ✫ ✫𝙳𝙰𝚁𝙺 𝙽𝙴𝚁𝙾✫ ✫ ✫` , buttons: buttons , headerType: 4} , { quoted: m } )  
 
     } catch(e) {
   await XeonBotInc.sendMessage(from , { text: 'error\n\n' + e }, { quoted: m } )      
