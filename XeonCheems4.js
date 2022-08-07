@@ -6743,7 +6743,7 @@ case 'fb' :
    if (!q) return await XeonBotInc.sendMessage(from , { text: 'need fb link' }, { quoted: m } )      
    const isfb = q.includes('facebook.com')? q.includes('facebook.com') : q.includes('fb.watch')? q.includes('fb.watch') : ''
        if (!isfb) return await XeonBotInc.sendMessage(from , { text: 'need fb link' }, { quoted: m } )  
-  const msg = '*KAveesha* MD FB Downloder\n\n*📥Quality එක තෝරන්න්න📤*'
+  const msg = '*Kaveesha* MD FB Downloder\n\n*📥Quality එක තෝරන්න්න📤*'
 const buttons = [
 {buttonId: 'fbsd ' + q, buttonText: {displayText: '480p'}, type: 1},
 {buttonId: 'fbhd ' + q, buttonText: {displayText: '720p'}, type: 1},
