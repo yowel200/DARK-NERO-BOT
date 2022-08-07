@@ -177,7 +177,7 @@ let buttons = [
 {buttonId: `wkwwk`, buttonText: {displayText: 'Welcome 🎲'}, type: 1}
 ]
 let buttonMessage = {
-document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
+document: fs.readFileSync('./XeonMedia/theme/welcome.png'),
 mimetype: docs,
 jpegThumbnail:XeonWlcm,
 mentions: [num],
