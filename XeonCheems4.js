@@ -6743,7 +6743,7 @@ case 'fb' :
    if (!q) return await XeonBotInc.sendMessage(from , { text: 'need fb link' }, { quoted: m } )      
    const isfb = q.includes('facebook.com')? q.includes('facebook.com') : q.includes('fb.watch')? q.includes('fb.watch') : ''
        if (!isfb) return await XeonBotInc.sendMessage(from , { text: 'need fb link' }, { quoted: m } )  
-  const msg = 'Kaveesha MD FB Downloder\n\n*📥Quality එක තෝරන්න්න📤*'
+  const msg = 'Vihanga MD FB Downloder\n\n*📥Quality එක තෝරන්න්න📤*'
 const buttons = [
 {buttonId: 'fbsd ' + q, buttonText: {displayText: '480p'}, type: 1},
 {buttonId: 'fbhd ' + q, buttonText: {displayText: '720p'}, type: 1},
@@ -6761,9 +6761,9 @@ await XeonBotInc.sendMessage(from, {  text: msg , footer: `${global.footer}` , b
   const data = await axios.get('https://api-bobiz.herokuapp.com/api/fb?url=' + q)
   const file = data.data[0]
 
-const fileup = await XeonBotInc.sendMessage(from , { text: '📥 Downloading...' }, { quoted: m } )
+const fileup = await XeonBotInc.sendMessage(from , { text: 'Downloading...' }, { quoted: m } )
 await XeonBotInc.sendMessage(from, { delete: fileup.key })
-const filedown = await XeonBotInc.sendMessage(from , { text: '📤 Uploading...' }, { quoted: m } )
+const filedown = await XeonBotInc.sendMessage(from , { text: 'Uploading...' }, { quoted: m } )
 const doc = await XeonBotInc.sendMessage(from , { video : { url : file.url  } ,  caption : `${global.cap}` } , { quoted: m })
 await XeonBotInc.sendMessage(from, { delete: filedown.key })	
   } 
@@ -9170,13 +9170,11 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
             { quickReplyButton: { displayText: `List Menu 🔎`, id: 'command'} },
             { quickReplyButton: { displayText: `Owner 👑`, id: 'owner'} }
         	]
-        	XeonBotInc.sendMessage(m.chat, { caption: alivems, image: fs.readFileSync('./XeonMedia/theme/new.jpg'), templateButtons: buttonmenu, footer: `${global.footer2}`, mentionedJid: [m.sender] })
-                  }
-
-               }
-                
-             break 
-                 case 'command': {
+        	XeonBotInc.sendMessage(m.chat, { caption: menulist, document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'), mimetype: `${docs}`, fileName: `${ownername}`, templateButtons: buttonmenu, footer: `${botname}`, mentionedJid: [m.sender] })
+                        }
+                     }
+            break
+                case 'command': {
                 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
