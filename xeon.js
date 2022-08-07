@@ -177,7 +177,7 @@ let buttons = [
 {buttonId: `wkwwk`, buttonText: {displayText: 'Welcome 🎲'}, type: 1}
 ]
 let buttonMessage = {
-document: fs.readFileSync('./XeonMedia/theme/welcome.png'),
+image: fs.readFileSync('./XeonMedia/theme/welcome.png'),
 mimetype: docs,
 jpegThumbnail:XeonWlcm,
 mentions: [num],
@@ -222,7 +222,7 @@ let buttons = [
 {buttonId: `wkwkwk`, buttonText: {displayText: 'Goodbye 😘'}, type: 1}
 ]
 let buttonMessage = {
-document: fs.readFileSync('./XeonMedia/theme/goodbye.jpg'),
+image: fs.readFileSync('./XeonMedia/theme/goodbye.jpg'),
 mimetype: docs,
 jpegThumbnail:XeonLft,
 mentions: [num],
