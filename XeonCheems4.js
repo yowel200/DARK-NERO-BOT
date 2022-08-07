@@ -6,7 +6,7 @@
 //© 2022 kaveesha Bot Inc. nero Bot MD
 //Thank you to Lord kaveesha, Family and Myself
 //════════════════════════════//
-      // KAVEESHA 
+      // KAVEESHA
 //════════════════════════════//
 //If you recode and uploading on your channel
 //or copy pasting the codes in ur script, 
@@ -510,7 +510,7 @@ jumlahharian = `${dataa.value}`
 	    let setting = global.db.data.settings[botNumber]
 	    if (new Date() * 1 - setting.status > 1000) {
 		let uptime = await runtime(process.uptime())
-		await XeonBotInc.setStatus(`${XeonBotInc.user.name} | Runtime : ${runtime(process.uptime())}`)
+		await XeonBotInc.setStatus(`${XeonBotInc.user.name} | 👨‍💻 Runtime : ${runtime(process.uptime())}`)
 		setting.status = new Date() * 1
 	    }
 	}
