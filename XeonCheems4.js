@@ -3,15 +3,10 @@
 //or copy the codes/script,
 //pls give credit
 //no credit? i will take action immediately
-//© 2022 Xeon Bot Inc. nero Bot MD
+//© 2022 kaveesha Bot Inc. nero Bot MD
 //Thank you to Lord kaveesha, Family and Myself
 //════════════════════════════//
-//recode kar ke youtube pe upload kar rhe hai ya
-//codes copy kar ke apne script me dal rhe
-//hai to, description me xeon ka yt channel
-// ka link paste kr dena as a cradit or github 
-//repo me bhi tag kardena baki jo
-//bhi karna hai apki marzi, thank you!
+      // KAVEESHA
 //════════════════════════════//
 //If you recode and uploading on your channel
 //or copy pasting the codes in ur script, 
@@ -6748,12 +6743,12 @@ case 'fb' :
    if (!q) return await XeonBotInc.sendMessage(from , { text: 'need fb link' }, { quoted: m } )      
    const isfb = q.includes('facebook.com')? q.includes('facebook.com') : q.includes('fb.watch')? q.includes('fb.watch') : ''
        if (!isfb) return await XeonBotInc.sendMessage(from , { text: 'need fb link' }, { quoted: m } )  
-  const msg = 'Vihanga MD FB Downloder\n\n*📥Quality එක තෝරන්න්න📤*'
+  const msg = 'kaveesha MD FB Downloder\n\n*📥Quality එක තෝරන්න්න📤*'
 const buttons = [
 {buttonId: 'fbsd ' + q, buttonText: {displayText: '480p'}, type: 1},
 {buttonId: 'fbhd ' + q, buttonText: {displayText: '720p'}, type: 1},
 ]
-await XeonBotInc.sendMessage(from, {  text: msg , footer: `${global.footer}` , buttons: buttons , headerType: 4} , { quoted: m } )  
+await XeonBotInc.sendMessage(from, {  text: msg , footer: `✫ ✫ ✫𝙳𝙰𝚁𝙺 𝙽𝙴𝚁𝙾✫ ✫` , buttons: buttons , headerType: 4} , { quoted: m } )  
 
     } catch(e) {
   await XeonBotInc.sendMessage(from , { text: 'error\n\n' + e }, { quoted: m } )      
@@ -6766,9 +6761,9 @@ await XeonBotInc.sendMessage(from, {  text: msg , footer: `${global.footer}` , b
   const data = await axios.get('https://api-bobiz.herokuapp.com/api/fb?url=' + q)
   const file = data.data[0]
 
-const fileup = await XeonBotInc.sendMessage(from , { text: 'Downloading...' }, { quoted: m } )
+const fileup = await XeonBotInc.sendMessage(from , { text: '📥 Downloading...' }, { quoted: m } )
 await XeonBotInc.sendMessage(from, { delete: fileup.key })
-const filedown = await XeonBotInc.sendMessage(from , { text: 'Uploading...' }, { quoted: m } )
+const filedown = await XeonBotInc.sendMessage(from , { text: '📤 Uploading...' }, { quoted: m } )
 const doc = await XeonBotInc.sendMessage(from , { video : { url : file.url  } ,  caption : `${global.cap}` } , { quoted: m })
 await XeonBotInc.sendMessage(from, { delete: filedown.key })	
   } 
@@ -9175,7 +9170,7 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
             { quickReplyButton: { displayText: `List Menu 🔎`, id: 'command'} },
             { quickReplyButton: { displayText: `Owner 👑`, id: 'owner'} }
         	]
-        	XeonBotInc.sendMessage(m.chat, { caption: menulist, document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'), mimetype: `${docs}`, fileName: `${ownername}`, templateButtons: buttonmenu, footer: `${botname}`, mentionedJid: [m.sender] })
+        	XeonBotInc.sendMessage(m.chat, { caption: alivms, image: fs.readFileSync('./XeonMedia/theme/alive.jpg'), mimetype: `${docs}`, fileName: `${ownername}`, templateButtons: buttonmenu, footer: `${botname}`, mentionedJid: [m.sender] })
                         }
                      }
             break
