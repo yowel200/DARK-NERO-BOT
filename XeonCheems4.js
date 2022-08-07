@@ -9170,11 +9170,13 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
             { quickReplyButton: { displayText: `List Menu 🔎`, id: 'command'} },
             { quickReplyButton: { displayText: `Owner 👑`, id: 'owner'} }
         	]
-        	XeonBotInc.sendMessage(m.chat, { caption: menulist, document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'), mimetype: `${docs}`, fileName: `${ownername}`, templateButtons: buttonmenu, footer: `${botname}`, mentionedJid: [m.sender] })
-                        }
-                     }
-            break
-                case 'command': {
+        	XeonBotInc.sendMessage(m.chat, { caption: alivems, image: fs.readFileSync('./XeonMedia/theme/new.jpg'), templateButtons: buttonmenu, footer: `${global.footer2}`, mentionedJid: [m.sender] })
+                  }
+
+               }
+                
+             break 
+                 case 'command': {
                 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
